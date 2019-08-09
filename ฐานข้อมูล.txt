@@ -1,0 +1,39 @@
+ลิงก์หลังบ้าน
+
+/admin-cp.php รหัสแก้ที่ไฟล์ process.php
+
+/config/uri.con.php
+
+/class/mysql.class.php - หน้าบ้าน
+
+/includes/config.php - หลังบ้าน
+
+CREATE TABLE `manga_ep` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `manga_id` int(11) NOT NULL,
+  `name` varchar(250) NOT NULL,
+  `chapter` varchar(50) NOT NULL,
+  `img_content` longtext NOT NULL,
+  `last_update` datetime NOT NULL,
+  `count_view` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `manga_id` (`manga_id`),
+  KEY `chapter` (`chapter`)
+) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+CREATE TABLE `manga_titles` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(250) NOT NULL,
+  `slug` varchar(250) NOT NULL,
+  `other_name` varchar(250) NOT NULL,
+  `released` year(4) NOT NULL,
+  `genres` varchar(250) NOT NULL,
+  `description` text NOT NULL,
+  `status` int(2) NOT NULL,
+  `a_status` varchar(150) NOT NULL,
+  `cover` varchar(250) NOT NULL,
+  `datetime_post` datetime NOT NULL,
+  `count_view` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `slug` (`slug`)
+) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
