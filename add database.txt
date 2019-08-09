@@ -1,12 +1,12 @@
-�ԧ����ѧ��ҹ
+ลิงก์หลังบ้าน
 
-/admin-cp.php ����������� process.php
+/admin-cp.php รหัสแก้ที่ไฟล์ process.php
 
 /config/uri.con.php
 
-/class/mysql.class.php - ˹�Һ�ҹ
+/class/mysql.class.php - หน้าบ้าน
 
-/includes/config.php - ��ѧ��ҹ
+/includes/config.php - หลังบ้าน
 
 CREATE TABLE `manga_ep` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
